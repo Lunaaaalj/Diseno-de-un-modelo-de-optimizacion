@@ -1,1 +1,8 @@
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Q\\begin{align} \\mathbf{min}\\quad z=10000x_1 + 7000x_2\\\\ s.t\\begin{cases} 3x_1 + x_2 \\geq 20\\\\ 3x_1 + x_2 \\leq 100\\\\ 2x_1 + 3x_2 \\geq 200\\\\ 2x_2 + 3x_2 \\leq 600\\\\ x_1 + 2x_2 \\geq 500\\\\ x_1 + 2x_2 \\leq 1200\\\\ x_2 \\geq 2x_1 \\end{cases} \\end{align}\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Q$$\\begin{align} \\mathbf{min}\\quad z=10000x_1 + 7000x_2\\\\ s.t\\begin{cases} 3x_1 + x_2 \\geq 20\\\\ 3x_1 + x_2 \\leq 100\\\\ 2x_1 + 3x_2 \\geq 200\\\\ 2x_2 + 3x_2 \\leq 600\\\\ x_1 + 2x_2 \\geq 500\\\\ x_1 + 2x_2 \\leq 1200\\\\ x_2 \\geq 2x_1 \\end{cases}\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Q\\begin{align} \\mathbf{min}\\quad z=10000x_1 + 7000x_2\\\\ s.t\\begin{cases} 3x_1 + x_2 \\geq 20\\\\ 3x_1 + x_2 \\leq 100\\\\ 2x_1 + 3x_2 \\geq 200\\\\ 2x_1 + 3x_2 \\leq 600\\\\ x_1 + 2x_2 \\geq 500\\\\ x_1 + 2x_2 \\leq 1200\\\\ x_2 \\geq 2x_1 \\end{cases} \\end{align}\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Q\\begin{align} \\mathbf{min}\\quad z &= 10000x_1 + 7000x_2 \\\\6pt \\text{s.a.}\\quad \\begin{cases} 3x_1 + x_2 \\geq 20 & \\text{(armas mínimas)}\\\\ 3x_1 + x_2 \\leq 150 & \\text{(armas máximas)}\\\\4pt\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qx_1 + 2x_2 \\geq 150 & \\text{(municiones mínimas)}\\\\ x_1 + 2x_2 \\leq 1200 & \\text{(municiones máximas)}\\\\4pt\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qx_2 \\geq 2x_1 & \\text{(prioridad estratégica)}\\\\\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Q2x_1 + 3x_2 \\geq 200 & \\text{(alimento mínimo)}\\\\ 2x_1 + 3x_2 \\leq 600 & \\text{(alimento máximo)}\\\\4pt\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qx_1, x_2 \\geq 0 \\end{cases} \\end{align}\\E$"}

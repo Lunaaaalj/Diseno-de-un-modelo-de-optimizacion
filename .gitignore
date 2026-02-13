@@ -1,2 +1,6 @@
 # python environments
 venv/
+
+# editor configs
+
+.vscode/
