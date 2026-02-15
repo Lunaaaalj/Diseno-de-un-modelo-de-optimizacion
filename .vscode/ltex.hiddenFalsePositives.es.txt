@@ -6,3 +6,4 @@
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qx_2 \\geq 2x_1 & \\text{(prioridad estratégica)}\\\\\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Q2x_1 + 3x_2 \\geq 200 & \\text{(alimento mínimo)}\\\\ 2x_1 + 3x_2 \\leq 600 & \\text{(alimento máximo)}\\\\4pt\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qx_1, x_2 \\geq 0 \\end{cases} \\end{align}\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QBerlin\\E$"}
