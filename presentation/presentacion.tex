@@ -3,11 +3,11 @@
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{amstex}
+\usepackage{graphicx}
 
 
 
-\title[Modelación de optimización]{Diseño de un modelo de optimización}
+\title[Modelación de optimización]{Diseño de un modelo de optimización\thanks{\hyperlink{Github}{https://github.com/Lunaaaalj/Diseno-de-un-modelo-de-optimizacion}}}
 \author[Ángel, Rubén]{Ángel Luna \and Ángel Rubén}
 \institute{Instituto Tecnológico y de Estudios Superiores de Monterrey}
 \date{\today}
@@ -32,6 +32,76 @@ El objetivo es determinar cuántas horas debe operar cada fábrica de forma que 
 \begin{frame}
     \frametitle{Modelación del problema}
 
+\begin{align*}
+        \min\quad z &= 10000x_1 + 7000x_2
+    \end{align*}
+    
+    \begin{align*}
+        \text{s.a.}\quad &
+        \begin{cases}
+            3x_1 + x_2 \geq 20 & \text{(armas mínimas)}\\
+            3x_1 + x_2 \leq 150 & \text{(armas máximas)}\\[4pt]
+            2x_1 + 3x_2 \geq 200 & \text{(alimento mínimo)}\\
+            2x_1 + 3x_2 \leq 600 & \text{(alimento máximo)}\\[4pt]
+            x_1 + 2x_2 \geq 150 & \text{(municiones mínimas)}\\
+            x_1 + 2x_2 \leq 1200 & \text{(municiones máximas)}\\[4pt]
+            x_2 \geq 2x_1 & \text{(restricción operativa)}\\
+            x_1, x_2 \geq 0 & \text{(no negatividad)}
+        \end{cases}
+    \end{align*}
 
 \end{frame}
+
+\begin{frame}
+    \frametitle{Graficación}
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.8\textwidth]{plot.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Solución}
+    \begin{verbatim}
+model = pyo.ConcreteModel()
+
+model.x1 = pyo.Var(within = pyo.NonNegativeIntegers)
+model.x2 = pyo.Var(within = pyo.NonNegativeIntegers)
+
+model.obj = pyo.Objective(expr = 10000 * model.x1 + 7000 * model.x2, 
+    sense = pyo.minimize)
+
+model.con1 = pyo.Constraint(expr = 3 * model.x1 + model.x2 >= 20)
+model.con2 = pyo.Constraint(expr = 3 * model.x1 + model.x2 <= 150)
+model.con3 = pyo.Constraint(expr = 2 * model.x1 + 3 * model.x2 >= 200)
+model.con4 = pyo.Constraint(expr = 2 * model.x1 + 3 * model.x2 <= 600)
+model.con5 = pyo.Constraint(expr = model.x1 + 2 * model.x2 >= 150)
+model.con6 = pyo.Constraint(expr = model.x1 + 2 * model.x2 <= 1200)
+model.con7 = pyo.Constraint(expr = model.x2 >= 2 * model.x1)
+
+opt = pyo.SolverFactory("glpk")
+results = opt.solve(model)
+model.display()
+    \end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Resultados}
+    \begin{verbatim}
+        Variables:
+    x1 : Size=1, Index=None
+        Key  : Lower : Value : Upper : Fixed : Stale : Domain
+        None :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+    x2 : Size=1, Index=None
+        Key  : Lower : Value : Upper : Fixed : Stale : Domain
+        None :     0 :  75.0 :  None : False : False : NonNegativeIntegers
+
+  Objectives:
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Value
+        None :   True : 525000.0
+    \end{verbatim}
+\end{frame}
+
+
 \end{document}

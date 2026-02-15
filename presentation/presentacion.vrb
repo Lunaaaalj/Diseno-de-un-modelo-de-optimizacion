@@ -1,0 +1,15 @@
+\frametitle{Resultados}
+    \begin{verbatim}
+        Variables:
+    x1 : Size=1, Index=None
+        Key  : Lower : Value : Upper : Fixed : Stale : Domain
+        None :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+    x2 : Size=1, Index=None
+        Key  : Lower : Value : Upper : Fixed : Stale : Domain
+        None :     0 :  75.0 :  None : False : False : NonNegativeIntegers
+
+  Objectives:
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Value
+        None :   True : 525000.0
+    \end{verbatim}
