@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1771200481.91983 "/Users/angelluna/Documents/STEM_PROJECTS/py/OperationsResearch/modelo_optimizacion/presentation/presentacion.tex" "presentacion.pdf" "presentacion" 1771200482.81871 0
-  "/Users/angelluna/Documents/STEM_PROJECTS/py/OperationsResearch/modelo_optimizacion/presentation/presentacion.tex" 1771200480.73714 5206 17426bb9b69c8430652b9750ca675764 ""
+["pdflatex"] 1771251096.75951 "/Users/angelluna/Documents/STEM_PROJECTS/py/OperationsResearch/modelo_optimizacion/presentation/presentacion.tex" "presentacion.pdf" "presentacion" 1771251097.78431 0
+  "/Users/angelluna/Documents/STEM_PROJECTS/py/OperationsResearch/modelo_optimizacion/presentation/presentacion.tex" 1771200495.98376 5206 17426bb9b69c8430652b9750ca675764 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcss0800.tfm" 1136768653 1536 16418351df4369b7cef8f784ccb87a85 ""
@@ -207,12 +207,12 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1752292931 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "plot.png" 1771186046.80554 70673 914144acb2e22ef9a3fb23c9d5078f76 ""
-  "presentacion.aux" 1771200482.77333 1539 873af0b49176fb24009bfcbd491e8431 "pdflatex"
-  "presentacion.nav" 1771200482.77439 835 b5c49ba28d3d2049d1773682fb2767a8 "pdflatex"
-  "presentacion.out" 1771200482.37526 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "presentacion.tex" 1771200480.73714 5206 17426bb9b69c8430652b9750ca675764 ""
-  "presentacion.vrb" 1771200482.69794 533 f50ab53f2a77f10442c53c81d368e973 "pdflatex"
+  "plot.png" 1771251096.27203 165354 1f4a2b445ef0c121a205d811243718d0 ""
+  "presentacion.aux" 1771251097.73743 1539 873af0b49176fb24009bfcbd491e8431 "pdflatex"
+  "presentacion.nav" 1771251097.7384 835 b5c49ba28d3d2049d1773682fb2767a8 "pdflatex"
+  "presentacion.out" 1771251097.29501 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "presentacion.tex" 1771200495.98376 5206 17426bb9b69c8430652b9750ca675764 ""
+  "presentacion.vrb" 1771251097.69246 533 f50ab53f2a77f10442c53c81d368e973 "pdflatex"
   (generated)
   "presentacion.aux"
   "presentacion.log"
